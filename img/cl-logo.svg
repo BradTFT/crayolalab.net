@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 125" width="166" height="125">
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #2b2b2b } 
+		.t1 { font-size: 64px;fill: #ffffff;font-family: "' Courier  New'" } 
+		.s2 { fill: #1d9e75 } 
+	</style>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m17 2h132c7.73 0 14 6.27 14 14v92c0 7.73-6.27 14-14 14h-132c-7.73 0-14-6.27-14-14v-92c0-7.73 6.27-14 14-14z"/>
+		<text id="cl" transform="translate(83,82)">
+			<tspan x="-26.5" y="0" class="t1">cl
+</tspan>
+		</text>
+		<path fill-rule="evenodd" class="s2" d="m115 90h24v8h-24z"/>
+	</g>
+</svg>
