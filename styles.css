@@ -2,40 +2,36 @@
 
 
 
-/* The outer blue background */
 .resume-container {
-    background-color: #0b0f19; /* A professional navy/slate blue. You can change this to 'blue' if you prefer */
-    padding: 3vh 2vh; /* Adds space around the outside of the white box */
-    min-height: 100vh; /* Ensures the blue background stretches the full height of the screen */
+    background-color: #0b0f19; 
+    padding: 3vh 2vh; 
+    min-height: 100vh; 
     box-sizing: border-box;
     border-color: #0b0f19;
 
 }
 
-/* The inner white paper-like box */
-.resume-content {
-    background-color: #ffffff; /* White background */
-    max-width: 61vh; /* Constrains the width to look like a standard piece of paper */
-    margin: 0 auto; /* Centers the box horizontally within the blue container */
-    margin-top: 5vh;
-    padding: 4vh; /* Adds space inside the white box so text doesn't touch the edges */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a drop shadow to make it pop off the background */
-    border-radius: 4px; /* Optional: Slightly rounds the corners of the white box */
 
+.resume-content {
+    background-color: #ffffff; 
+    max-width: 61vh; 
+    margin: 0 auto; 
+    margin-top: 5vh;
+    padding: 4vh; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 4px; 
 }
 
 
 
-/* Container to center and space the buttons */
 .button-group {
     display: flex;
     flex-direction: column;
-    gap: 3vh; /* Spaces the buttons evenly apart */
+    gap: 3vh; 
 }
 
-/* The blue anchor boxes */
 .center-buttons {
-    display: flex; /* Added flex to center the text inside the button */
+    display: flex; 
     justify-content: center;
     align-items: center;
     
@@ -54,4 +50,3 @@
 .center-buttons:hover {
     background-color: #0a668f;
 }
-
