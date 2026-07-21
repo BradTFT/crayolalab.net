@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Homelab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/cl-logo.svg">
+
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #0b0f19;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        min-height: 100vh;
+        height: 90%;
+        background-color: white;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div id="popUp" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center;">
+    <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
+        <h2>Welcome!</h2>
+        <p>This page is currently in progress, so please pardon our dust. This page is too important to keep away from you though!</p>
+        <button onclick="document.getElementById('popUp').style.display='none'">Close</button>
+    </div>
+    </div>
+
+
+    <div class="content">
+        <h1>About</h1>
+        <div class="about">
+            <p>My HomeLab project began before I even knew what a homelab was. When I was younger, I always enjoyed experimenting with various technical items, including laptops, circuits, and anything else i could get my hands on. Later on, I began experimenting with Linux distributions which led me to want to learn even more about programming and how computers work. I had a blast writing code and trying new things (and breaking them) on different peices of hardware. Although, being young, I didnt have the money for new or even used hardware, so I slowly stopped experimenting. A few years later, I received a free HP Z400 Workstation and decided to get back into messing around with things. You can read my full journey later in the page when I go more in depth about the <a>Z400</a>. Shortly after that, I began studying for my Cybersecurity and Network Engineering degree where I was able to learn more about networks and how computers talk to each other. This led me to want to acquire more hardware and learn everything I could about open source tools and hosting my own services. That leads us to today, where my HomeLab is where I have learned quite a bit about troubleshooting, networking, programming, device configuration, and device hardware. If you are considering starting a homelab, take this as a sign to go ahead and start. You dont need to spend a lot, you can even find some stuff for free, but go be curious, and you might just find a new career.</p>
+        </div>
+        
+        <h2>Hardware</h2>
+        <div class="hardware">
+            <ul>
+                <li>Z400</li> <img src="" alt="">
+                <p>This device was the first dedicated server in my homelab. I got it for free from a co-worker and decided to set up a Plex server. Unfortunately certain complications did not allow the Plex server to work as intended, so I retired the server, until I hit a hardware ceiling on the Pi.</p>
+                <p></p>
+                <ul>
+                    <h4>Hardware Specifications</h4>
+                    <li>CPU: </li>
+                    <li>RAM: </li>
+                    <li>Graphics: </li>
+                    <li>Storage: </li>
+                </ul>
+
+                    <h4>Notable Software/Purpose</h4>
+                    <p></p>
+<br>
+                <li>Raspberry Pi 4</li> <img src="" alt="">
+
+                <p></p>
+                <ul>
+                    <h4>Hardware Specifications</h4>
+                    <li>CPU: 1.8GHz, quad core</li>
+                    <li>RAM: 2gb LPDDR4</li>
+                    <li>Storage: 32gb SD card holds the operating system. 1TB External SSD is connected </li>
+                </ul>
+
+                    <h4>Notable Software/Purpose</h4>
+                    <p>Currently handles all network services including PiHole DNS and Unbound for private DNS filtering and intranet hosting.</p>
+
+<br>
+                <li>OptiPlex 3060</li> <img src="" alt="">
+
+                <p></p>
+                <ul>
+                    <h4>Hardware Specifications</h4>
+                    <li>CPU: </li>
+                    <li>RAM: </li>
+                    <li>Graphics: </li>
+                    <li>Storage: </li>
+                </ul>
+
+                    <h4>Notable Software/Purpose</h4>
+                    <p></p>
+                    
+<br>                
+            </ul>
+            <h3>Networking</h3>
+
+            <ul>
+                <li>Cisco Catalyst 2960 PoE+ Gigabit Switch</li>
+
+                <li>Cisco AIR CAP2702 Access Points</li>
+
+                <li>Omada Edge Router 605</li>
+            </ul>
+
+        </div>
+
+        <h2>Software</h2>
+        <div class="software">
+            <p>As far as software goes, the setup is pretty simple. All devices are using a compatible version of Ubuntu and Docker. This setup is super simple and allows me to have great control over all services via Docker networking and the nature of containerization.</p>
+
+        </div>
+
+        <h2>Resources used</h2>
+        <div class="resources">
+            <p>One of the main struggles in this hobby is the lack of support. When I first started, I had no clue how to set things up or fix them when they wouldnt work. Though a large portion of fixing things is just getting in there and trying stuff, some great resources have always been YouTube, app documentation, app github pages, and StackOverflow. For YouTube resources, I highly recommend <a href="https://www.youtube.com/@HardwareHaven">Hardware Haven</a>, <a href="https://www.youtube.com/@NetworkChuck">Network Chuck</a>, <a href="https://www.youtube.com/@CrosstalkSolutions">CrossTalk Solutions</a>, <a href="https://www.youtube.com/@TechnoTim">Techno Tim</a>, and <a href="https://www.youtube.com/@Fireship">FireShip</a>, just to name a few.
+            </p>
+        </div>
+
+
+    <script>
+        window.onload = function() {
+            document.getElementById('popUp').style.display = "flex";
+        };
+    </script>
+    </div>
+</body>
+</html>
