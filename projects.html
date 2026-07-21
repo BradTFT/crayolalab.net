@@ -6,29 +6,65 @@
     <title>Coming Soon - Check Back Soon</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/cl-logo.svg">
-    <!-- Google Fonts for a clean look -->
-    <link href="https://googleapis.com" rel="stylesheet">
+
+
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+    }
+
+
+
+    .text-container {
+        position: absolute; top: 0; left: 50;
+        padding: 5vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 10vh;
+        color: #0ea5e9;
+    }
+
+    p {
+        font-size: small;
+        color: #0ea5e9;
+    }
+
+    #network-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1; 
+        background-color: #0b0f19; 
+    } 
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <h1>Check back soon!</h1>
-            <p>This page is currently in progress, apart of an ongoing project. Please check back soon</p>
-            <div class="launch-date">
-                <p>Scheduled Launch: <span>Late Summer - Early Fall 2026</span></p>
-            </div>
-
-            <div class="social-links">
-                <a href="https://linkedin.com/in/bradley-caiola" target="_blank" class="linkedin-btn">
-                <!-- Optional SVG Icon -->
-                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-                </a>
-            </div>
-        </div>
+    <canvas id="network-bg"></canvas>
+    <div class="text-container">
+            <h1>My Projects</h1>
     </div>
 
-    <script src="background-animation.js"></script>
+
+        <ul class="button-group">
+            <a class="center-buttons" href="in-progress.html">Gallery</a>
+            <a class="center-buttons" href="/projects/homelab.html">HomeLab</a>
+            <!-- <a class="center-buttons" href="projects/homelab/gallery.html">Gallery</a> -->
+            <a class="center-buttons" href="linkedin.html">LinkedIn</a>
+        </ul>
+<script src="../homepage/background-animation.js"></script>
 </body>
 </html>
